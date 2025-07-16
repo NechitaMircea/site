@@ -1,3 +1,8 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     background-color: black;
@@ -8,11 +13,15 @@ body
 
 .banner
 {
+    top: 0;
+    position: fixed;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    background-color: grey;
-    padding: 1%;
+    width: 100vw;
+    background-color: rgba(69, 69, 69, 0.9);
+    padding: 1% 0%;
+    z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
 .div_sigla_best
@@ -27,7 +36,7 @@ body
 .sigla_best
 {
     min-width: 100px;
-    width: 15%;
+    width: 10vw;
     height: auto;
     flex-shrink: 0;
 }
@@ -36,30 +45,32 @@ body
 {
     color: white;
     margin-right: 5%;
-    font-size: 80%;
+    font-size: 0.7vw;
     font-weight: normal;
 }
 
 .side_menu
 {
+    display: flex;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    background-color: grey;
+    background-color: rgba(69, 69, 69, 0.9);
     border-radius: 0px 10px 10px 0px;
     padding-left: 1%;
-    padding-right: 3%;
+    padding-right: 1%;
     flex-direction: column;
     justify-content: space-between;
     z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
 .side_link
 {
     color: white;
-    font-size: 80%;
+    font-size: 0.7vw;
     font-weight: normal;
-    margin: 80% 0px;
+    margin: 20% 0px;
 }
 
 .side_link :hover,
@@ -87,18 +98,83 @@ body
     text-align: center;
     margin: 0;
     height: 85vh;
+    padding-bottom: 127px;
 }
 
 .titlu :hover
 {
     cursor: default;
 }
+
 .titlu_best
 {
-    font-size: 1000%;
+    font-size: 9vw;
 }
 
 .titlu2
 {
-    font-size: 800%;
+    font-size: 7vw;
+}
+
+.about
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7vw;
+    padding-top: 10vh;
+}
+
+.about_title
+{
+    color: white;
+}
+
+.about_img
+{
+    width: 40vw;
+}
+
+.about_text
+{
+    color: white;
+    font-size: 1.5vw;
+    line-height: 4vh;
+    margin-left: 1vw;
+}
+.about2
+{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 414px)
+{
+    .banner
+    {
+        top: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        background-color: rgba(69, 69, 69, 0.9);
+        padding: 4% 0%;
+        z-index: 2;
+        backdrop-filter: blur(5px);
+    }
+
+    .banner_link
+    {
+        color: white;
+        margin-right: 5%;
+        font-size: 1vh;
+        font-weight: normal;
+    }
+
+    .side_link
+    {
+        color: white;
+        font-size: 1vh;
+        font-weight: normal;
+        margin: 20% 0px;
+    }
 }
