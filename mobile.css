@@ -1,0 +1,40 @@
+@media only screen and (max-width: 414px)
+{
+    .div_sigla_best
+    {
+        width: 30vw;
+        padding-left: 3vw;
+    }
+
+    .sigla_best
+    {
+        width: 100%;
+    }
+
+    .empty
+    {
+        width: 1fr;
+        min-width: 0px;
+    }
+
+    .banner_links
+    {
+        display: flex;
+        justify-content:space-between;
+        width: 50vw;
+    }
+
+    .banner_link
+    {
+        color: white;
+        font-size: 1vh;
+    }
+
+    .side_link
+    {
+        flex: 1;
+        color: white;
+        font-size: 1vh;
+        margin: 20% 0px;
+    }
+}

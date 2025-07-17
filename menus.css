@@ -1,0 +1,92 @@
+/* Top banner */
+
+.banner
+{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    padding: 1% 0%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0px 1px rgba(255, 255, 255);*/
+    z-index: 2;
+}
+
+.div_sigla_best
+{
+    width: 190px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+.sigla_best
+{
+    width: 100%;
+}
+
+.empty
+{
+    flex: 1;
+    min-width: 200px;
+}
+
+.banner_links
+{
+    display: flex;
+    text-align: center;
+    width: 500px;
+}
+
+.banner_link
+{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    flex: 1;
+}
+
+/* Side menu */
+
+.side_menu
+{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(69, 69, 69, 0.9);
+    border-radius: 0px 10px 10px 0px;
+    padding-left: 1%;
+    padding-right: 1%;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+.side_link
+{
+    color: white;
+    font-size: 0.7vw;
+    font-weight: normal;
+    margin: 20% 0px;
+}
+
+.side_link :hover,
+.banner_link :hover
+{
+    color: black;
+    text-decoration: underline;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.side_link :active,
+.banner_link :active
+{
+    opacity: 70%;
+}
