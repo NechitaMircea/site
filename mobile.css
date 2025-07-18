@@ -37,4 +37,37 @@
         font-size: 1vh;
         margin: 20% 0px;
     }
+
+    .titlu
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: Special Gothic Expanded One;
+        color: rgba(255, 255, 255, 0.696);
+        width: 50vw;
+        height: 10vh;
+        border-radius: 20px;
+        background-color: rgba(200, 200, 200, 0.2);
+        backdrop-filter: blur(5px);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+        top: 10vh;
+        left: 5vw;
+        padding: 1vh 1vw;
+        /*box-shadow: 1px 1px rgba(255, 255, 255), 
+                    -1px -1px rgba(255, 255, 255),
+                    -1px 1px rgba(255, 255, 255), 
+                    1px -1px rgba(255, 255, 255);*/
+    }
+
+    .titlu1
+    {
+        font-size: 7vw;
+    }
+
+    .titlu2
+    {
+        font-size: 4vw;
+    }
 }
